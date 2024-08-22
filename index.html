@@ -1,61 +1,106 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <h1>Oscar Daniel Garcia Bravo</h1>
-        <p>Desarrollador de software <br>
-            Tecnologo en analisis y desarrollo de sistemas de informacion <br>
-            Edad:22 años
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css" />
+		<title>Portafolio</title>
+	</head>
+	<body>
+		<header class="mainheader">
+			<nav id="navbar">
+				<div class="container">
+					<div class="logo"><img src="images/logo.png" alt="" /></div>
+					<ul>
+						<li><a href="#about">Acerca de mi</a></li>
+						<li><a href="#portfolio">Portafolio</a></li>
+						<li><a href="#social">Contacto</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div id="showcase" class="p-1 bk-half txt-center">
+				<div class="container">
+					<img src="images/showcase.jpg" alt="" />
+					<h1 class="display-1">Oscar Daniel Garcia Bravo</h1>
+					<p class="txt-large pb-1">
+						Habilidad para el trabajo individual y grupal, rápida adaptación al contexto y disposición para la
+adquisición de conocimiento, liderazgo, organización en el desarrollo de actividades y gentileza en
+la comunicación con otros.
 
-    
-    </section>
-         
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Técnico en programación de software y tecnólogo en análisis y desarrollo de sistemas de
-            información, en mis anteriores experiencia he podido hacer uso de distintos lenguajes y
-            herramientas como lo son: Php, Java, Html, Css, Node.js, Mysql etc; para poder realizar aplicativos
-            nuevos y modificar aplicativos ya implementados dentro de la compañía; además de contar con
-            experiencia en el ámbito de selección personal realizando entrevistas y pruebas psicotécnicas;
-            además de contar con experiencia en el área de ventas como asesor comercial.
-            </p><br>
-            <p>En el ámbito personal se destaca el liderazgo en laborales sociales realizando charlas
-                pedagógicas a adolescentes con problemas de autolesión e implementando un proyecto de
-                recolección de tapas para niños con cáncer.</p>
-    </section>
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <li><a href="calculadora-1/index.html">Calculadora con Javascript</a></li>
-    </section>
-    <section id="skills">
-        <h2>Habilidades</h2>
-        
-    </section>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Email: Alexvillalobos313@gmail.com</p>
-        <p>Celular: 3014025400</p>        
-    </section>
-    <footer>
-        
-    </footer>
-    <script src="js/main.js"></script>
-</body>
+						
+					</p>
+					<a href="#about" class="btn btn-outline">Acerca de mi</a>
+				</div>
+			</div>
+		</header>
+
+		<section id="about" class="bk-half-reverse p-1">
+			<div class="container">
+				<h2>Acerca de mi</h2>
+				<div class="flex">
+					<div class="flex-box">
+						<p>
+							Técnico en programación de software y tecnólogo en análisis y desarrollo de sistemas de
+información, en mis anteriores experiencia he podido hacer uso de distintos lenguajes y
+herramientas como lo son: Php, Html, Css, Node.js, Mysql etc; para poder realizar aplicativos
+nuevos y modificar aplicativos ya implementados dentro de la compañía; además de contar con
+experiencia en el ámbito de selección personal realizando entrevistas y pruebas psicotécnicas;
+además de contar con experiencia en el área de ventas como asesor comercial
+						</p>
+						<p>
+							En el ámbito personal se destaca el liderazgo en laborales sociales realizando charlas
+pedagógicas a adolescentes con problemas de autolesión e implementando un proyecto de
+recolección de tapas para niños con cáncer.
+						</p>
+						
+							
+						
+					</div>
+					<div class="flex-box">
+						<img src="images/about.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="extract" class="container txt-center p-1">
+			<p class="display-2 w-70">Algunos de mis mas recientes trabajos</p>
+			<img src="images/arrow.png" alt="" />
+			<p class="txt-large">View portfolio</p>
+		</section>
+
+		<section id="portfolio">
+			<div class="flex">
+				<div> <h1><a href="calculadora-1/index.html">calculadora</a></h1>
+				<img class="flex-box" src="images/portfolio-1.jpg" alt="" /></div>
+				<div> <h1><a href="ecommerce">ecommerce</a></h1>
+				<img class="flex-box" src="images/portfolio-2.jpg" alt="" /></div>
+				<div><h1><a href="crud_node.js">crud node.js</a></h1>
+				<img class="flex-box" src="images/portfolio-3.jpg" alt="" /></div>
+			</div>
+			
+		</section>
+
+		<section id="social" class="container txt-center p-1">
+			<p>
+				I want to stay in touch with you! <br />
+				Please follow me on social media to keep in touch.
+			</p>
+			<div class="social-flex w-30">
+				
+				<img src="images/icon-instagram.png" alt="" />
+				
+				
+			</div>
+		</section>
+
+		<footer id="mainfooter" class="txt-center">
+			<a href="https://github.com/PEB1234?tab=repositories" class="twitter-follow-button" data-show-count="false"
+				>Cuenta gitHub</a
+			>
+			<script async src="https://github.com/PEB1234?tab=repositories" charset="utf-8"></script>
+		</footer>
+	</body>
 </html>
